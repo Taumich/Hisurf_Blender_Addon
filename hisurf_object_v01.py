@@ -1,7 +1,7 @@
 bl_info = {
-    "name": "Hisurf Objects v0.1",
+    "name": "Hisurf Objects v0.2",
     "author": "Michael Arenander",
-    "version": (0, 1),
+    "version": (0, 2),
     "blender": (2, 80, 0),
     "location": "View3D > Add > Mesh > New Object",
     "description": "Adds a new High-Poly Workflow Object",
@@ -53,7 +53,7 @@ def add_object(self, context):
 
 class OBJECT_OT_add_object(Operator, AddObjectHelper):
     """Create a new plane with high-poly workflow properties"""
-    bl_idname = "mesh.add_object"
+    bl_idname = "mesh.hisurf"
     bl_label = "Add Hisurf Plane"
     bl_options = {'REGISTER', 'UNDO'}
 
